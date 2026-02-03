@@ -70,7 +70,7 @@
       and hang out with me and participate in the super chill evening I have planned on 2/14?
     </h1>
 
-    <p>pls make ur selection below.</p>
+    <p>pls make ur selection below (but u probably need to call/txt me because I didn't know how to code the website to notify me, but I tried.</p>
 
     <button class="yes" onclick="answer('yes')">Yes 💖</button>
     <button class="no" onclick="answer('no')">No 🫣</button>
@@ -80,8 +80,8 @@
 <script>
 function answer(choice){
   const time = Date.now();
-  window.location.href =
-    "result.html?choice=" + choice + "&time=" + time;
+window.location.href = "./result.html?choice=" + choice + "&time=" + time;
+
 }
 </script>
 
