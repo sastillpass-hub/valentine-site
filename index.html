@@ -79,11 +79,25 @@
 
 <script>
 function answer(choice){
-  const time = Date.now();
-window.location.href = "./result.html?choice=" + choice + "&time=" + time;
+  const card = document.querySelector(".card");
 
+  if(choice === "yes"){
+    card.innerHTML = `
+      <h1>ok yay &lt;3 💘</h1>
+      <p>text me 😌</p>
+    `;
+  } else {
+    card.innerHTML = `
+      <h1>ok wait… try again 😌</h1>
+      <p>no pressure just vibes (but also retry)</p>
+    `;
+    setTimeout(() => {
+      window.location.href = "./index.html";
+    }, 1400);
+  }
 }
 </script>
+
 
 </body>
 </html>
