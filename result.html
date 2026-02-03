@@ -80,11 +80,19 @@
 <p class="p1">const timeDiv = document.getElementById("time");</p>
 <p class="p2"><br></p>
 <p class="p1">if(choice === "yes"){</p>
-<p class="p1"><span class="Apple-converted-space">  </span>answerDiv.textContent = "She said YES 💖😭";</p>
-<p class="p1">}else if(choice === "no"){</p>
-<p class="p1"><span class="Apple-converted-space">  </span>answerDiv.textContent = "She said NO 🫣💔";</p>
-<p class="p1">}else{</p>
-<p class="p1"><span class="Apple-converted-space">  </span>answerDiv.textContent = "No answer yet";</p>
+if(choice === "yes"){
+  answerDiv.textContent = "ok yay <3 💘";
+}else if(choice === "no"){
+  answerDiv.textContent = "ok wait… try again 😌";
+  
+  // send back to main page after 2 seconds
+  setTimeout(() => {
+    window.location.href = "index.html";
+  }, 2000);
+
+}else{
+  answerDiv.textContent = "No answer yet";
+}
 <p class="p1">}</p>
 <p class="p2"><br></p>
 <p class="p1">if(time){</p>
